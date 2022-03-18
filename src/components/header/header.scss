@@ -1,0 +1,46 @@
+@import "../../globalStyles.scss";
+
+.head{
+    
+    color:$base-color;
+    height:5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+    &-img{
+        height:50px;
+        width:200px;
+    }
+    
+    
+}
+
+.search{
+    border: 0px solid grey ;
+    box-shadow: 1rem black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    height: 3rem;
+    width:30rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 3px 5px lightgrey;
+    &-input{
+        height: 2rem;
+        background-color: #fff;
+        outline:none;
+        border:none;
+        font-size: large;
+        padding-left: 5px;
+    }
+    &-icon{
+        color:grey;
+        background-color: #fff;
+        font-size: 1rem;
+        margin-left:5px;
+    }
+}
