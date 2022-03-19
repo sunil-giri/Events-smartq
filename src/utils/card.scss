@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     background-color: #fff ;
-    padding:1rem
+    padding:2rem;
+    margin:1rem;
 }
 .card-grid>*,.details>*,.formdetails>*,form>*{
     background-color: #fff;
@@ -57,7 +58,8 @@ form{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    min-width: 424px;
+    flex: 2;
+    padding: 1rem;
 }
 
 input{
@@ -67,3 +69,8 @@ input{
     outline: none;
     padding: 0.3rem;
 }
+
+p{
+    margin:0
+}
+

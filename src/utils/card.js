@@ -9,18 +9,18 @@ function CardComponent({data}) {
                 <div className='details'>
                     <img src={val.imageurl} alt='food-img'/>
                     <div className='fooddetails'>
-                    <p>{val.foodname}</p>
-                    <p>{val.fooddescription}</p>
-                    <p>{val.category}</p>
-                    <button>Add</button>
+                    <p className='fs-4 fw-bold'>{val.foodname}</p>
+                    <p className='fs-6'>{val.fooddescription}</p>
+                    <p className='fs-6'>{val.category}</p>
+                    <button className='btn btn-primary px-2'>Add-ons</button>
                     </div>
-                    <p>{val.price}</p>
+                    <p className='text-primary fw-bold'>${val.price}</p>
                 </div>
                 <div className='formdetails'>
                     <form>
                         <div className='labelformgroup1'>
                         <label>Quantity</label>
-                        <label>Session</label>
+                        <label className='session'>Session</label>
                         <label>Sub Total</label>
                         </div>
                         <div className='formgroup1'>
@@ -37,7 +37,7 @@ function CardComponent({data}) {
                         </div>
                         <div className="formgroup2">
                         <input type="text"/>
-                        <button>Add to Cart</button>
+                        <button className='btn btn-primary px-3'>Add to Cart</button>
                         </div>
                     </form>
                 </div>
