@@ -9,6 +9,9 @@ function Booking() {
   console.log("Booking",data)
   return (
     <div className='booking'>
+      <p className='fw-bold fs-2 text-primary title'>
+      Book Your Meal
+      </p>
       <Tabcomponent/>
     </div>
   )
