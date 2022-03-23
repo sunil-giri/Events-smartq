@@ -10,13 +10,17 @@ import {GlobalContext} from './context';
 
 function App() {
   const [value,setValue]=useState(null)
+  const [cartData,setCartData]=useState({
+    cart_value:0,
+    items:[]
+  })
   useEffect(async()=>{
     const res=await axios.get('https://smartqdemo.firebaseio.com/events-data.json')
     setValue(res.data)
     console.log(value)
   },[])
   return (
-    <GlobalContext.Provider value={{value,setValue}}>
+    <GlobalContext.Provider value={{value,setValue,cartData,setCartData}}>
     <div className="App">
       <Header/>
       <BrowserRouter>

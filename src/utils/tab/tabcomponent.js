@@ -3,6 +3,7 @@ import { GlobalContext } from '../../context'
 import CardComponent from '../card'
 import "./tabcomponent.scss"
 import searchImage from "../../assets/search-icon.png"
+import Cart from '../cart/cart'
 
 function Tabcomponent() {
 
@@ -54,6 +55,9 @@ function Tabcomponent() {
         <div className='searched'>
             {data.value!==null?<CardComponent data={data.value.menu}  />:null}
             {/* <CardComponent items='searched'/> */}
+        </div>
+        <div className='cart-component'>
+            <Cart/>
         </div>
     </div>
   )
